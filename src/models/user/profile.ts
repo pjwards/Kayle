@@ -1,4 +1,4 @@
-import { UserProfileInterface } from '@/types/domain/inteface/user';
+import { UserProfileInterface } from '@/interface/user';
 
 export class Profile implements UserProfileInterface {
   public name: string;

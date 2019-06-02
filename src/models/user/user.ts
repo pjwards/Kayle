@@ -1,4 +1,4 @@
-import { UserInterface } from '@/types/domain/inteface/user';
+import { UserInterface } from '@/interface/user';
 import { Profile } from '@/models/user/profile';
 
 export class User implements UserInterface {

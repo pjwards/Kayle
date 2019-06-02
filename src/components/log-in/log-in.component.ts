@@ -5,18 +5,20 @@ import {
 import {
   EMAIL_RULES,
   PASSWORD_RULES,
-  Rule,
-} from '@/interfaces/auth';
-import { ErrorResponse } from '@/types/domain/inteface/api';
+} from '@/const/auth';
+import { ErrorResponse } from '@/interface/api';
 import {
   logInGoogle,
   logInLocal,
 } from '@/api/user';
 import { catchError } from 'rxjs/operators';
 import { EMPTY } from 'rxjs';
-import { User } from '@/models/user';
-import { UserInterface } from '@/types/domain/inteface/user';
-import { SignUpForm } from '@/types/domain/inteface/auth';
+import { User } from '@/models/user/user';
+import { UserInterface } from '@/interface/user';
+import {
+  SignUpForm,
+  Rule,
+} from '@/interface/auth';
 
 @Component
 export default class LogInComponent extends Vue {

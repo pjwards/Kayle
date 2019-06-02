@@ -1,7 +1,6 @@
-import { PASSWORD_SIZE } from '@/types/const/auth';
+import { Rule } from '@/interface/auth';
 
-export type Rule = (value: string) => boolean | string;
-
+export const PASSWORD_SIZE: number = 4;
 export const EMAIL_RULES: Rule[] = [
   (v: string): boolean | string => !!v || 'Email is required',
   (v: string): boolean | string => /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'Email must be valid',

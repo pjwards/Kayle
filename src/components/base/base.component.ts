@@ -3,7 +3,7 @@ import {
   Vue,
 } from 'vue-property-decorator';
 import MainComponent from '@/modules/nibble/components/main/main.component';
-import { User } from '@/models/user';
+import { User } from '@/models/user/user';
 import {
   logOut,
 } from '@/api/user';

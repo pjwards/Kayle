@@ -5,11 +5,13 @@ import {
 import {
   EMAIL_RULES,
   PASSWORD_RULES,
-  Rule,
-} from '@/interfaces/auth';
+} from '@/const/auth';
 import { signUpLocal } from '@/api/user';
-import { SignUpForm } from '@/types/domain/inteface/auth';
-import { ErrorResponse } from '@/types/domain/inteface/api';
+import {
+  SignUpForm,
+  Rule,
+} from '@/interface/auth';
+import { ErrorResponse } from '@/interface/api';
 import { catchError } from 'rxjs/operators';
 import { EMPTY } from 'rxjs';
 

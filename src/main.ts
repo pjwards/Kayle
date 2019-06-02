@@ -8,8 +8,8 @@ import '@/axios';
 import {
   currentUser,
 } from '@/api/user';
-import { User } from '@/models/user';
-import { UserInterface } from '@/types/domain/inteface/user';
+import { User } from '@/models/user/user';
+import { UserInterface } from '@/interface/user';
 
 Vue.config.productionTip = false;
 

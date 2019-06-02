@@ -6,8 +6,8 @@ import {
   from,
 } from '@/utils/http';
 import { API_SERVER } from '@/settings';
-import { SignUpForm } from '@/types/domain/inteface/auth';
-import { UserInterface } from '@/types/domain/inteface/user';
+import { SignUpForm } from '@/interface/auth';
+import { UserInterface } from '@/interface/user';
 
 export function currentUser() {
   return from<any>(
